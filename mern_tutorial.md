@@ -4,14 +4,19 @@
 
 Install latest npm
 
-_sudo npm install npm@latest -g_
+```bash
+sudo npm install npm@latest -g
+npm --version
+npx --version
+```
 
-*Create de folder struscture as shown in the three*
+Create de folder struscture as shown in the three
 
 "Insert tree here"
 
-*Init npm project and install necessary dependencies*
+Init npm project and install necessary dependencies
 
+```bash
 npm init --yes
 
 npm install express
@@ -21,7 +26,20 @@ npm install nodemon -D #as a development dependencie.
 npm install morgan #print to console log messages
 
 npm install mongoose
+```
 
-*Install mongodb*
+Install mongodb
 
+```bash
 sudo apt install mongodb
+```
+
+Check if database is running:
+
+```bash
+mongodb
+
+else
+
+service mongodb start
+```
