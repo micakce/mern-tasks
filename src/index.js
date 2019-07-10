@@ -17,7 +17,7 @@ app.use(express.json());
 app.use('/api/tasks', require('./routes/task.routes.js'))
 
 // Static files
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'app/build/')));
 // console.log(path.join(__dirname, 'public'));
 
 // Starting the server
