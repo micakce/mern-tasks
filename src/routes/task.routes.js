@@ -3,6 +3,14 @@ const router = express.Router();
 
 const Task = require('../models/task');
 
+
+// Allow cross server requests
+router.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 router.get('/', async (req, res) => {
     const tasks = await Task.find();
     res.json(tasks)
