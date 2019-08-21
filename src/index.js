@@ -21,7 +21,6 @@ app.use(express.static(path.join(__dirname, 'app/build/')));
 // console.log(path.join(__dirname, 'public'));
 
 // Starting the server
-
 app.listen(app.get('port'), () => {
     console.log(`Sever listening on port ${app.get('port')}`);
 });
